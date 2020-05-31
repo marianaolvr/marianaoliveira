@@ -23,16 +23,16 @@
         <nav class="menu">
             <ul>
                 <li>
-                    <a href="">SOBRE MIM</a>
+                    <a href="#sobre">SOBRE MIM</a>
                 </li>
                 <li>
-                    <a href="">TECNOLOGIAS</a>
+                    <a href="#tecnologias">TECNOLOGIAS</a>
                 </li>
                 <li>
-                    <a href="">PORTFÓLIO</a>
+                    <a href="#projetos">PORTFÓLIO</a>
                 </li>
                 <li>
-                    <a href="">CONTATO</i></a>
+                    <a href="#contato">CONTATO</i></a>
                 </li>
             </ul>
         </nav>
@@ -42,15 +42,13 @@
         <div class="text-banner">
             <h1 class="open-text">OLÁ, EU SOU A MARIANA</h1>
             <h2 class="open-text">DESENVOLVEDORA WEB E JORNALISTA</h2>
-
         </div>
         <div class="img-banner">
             <img class="img-banner" src="./img/3099610.jpg" alt="">
         </div>
     </div>
 
-    <section class="sobre">
-        <!-- <div class="content-sobre"> -->
+    <section class="sobre" id="sobre">
         <container class="sobre-content">
             <div class="title-sobre">
                 <h2>O prazer <br>
@@ -75,48 +73,83 @@
         <figure>
             <img class="foto-sobre" src="./img/foto_pessoal_01.jpg" alt="">
         </figure>
-        <!-- </div> -->
-    </section>
-
-    <section class="tecnologias">
-
-        <!-- <div class="title-tecnologias">
-            <h2>TECNOLOGIAS</h2>
-        </div> -->
-
-        <div class="content-tecnologias">
-            <h3>Tecnologias com as quais já trabalhei</h3>
-            <div class="grid">
-                <img src="./img/tecs/html4-33.png" alt="" class="tec-exe">
-                <img src="./img/tecs/css4-33.png" alt="" class="tec-exe">
-                <img src="./img/tecs/javascript4-33.png" alt="" class="tec-exe">
-                <img src="./img/tecs/nodejs-logo4-33.png" alt="" class="tec-exe">
-                <img src="./img/tecs/mongodb4-33.png" alt="" class="tec-exe">
-                <img src="./img/tecs/php4-33.png" alt="" class="tec-exe">
-                <img src="./img/tecs/laravel4-33.png" alt="" class="tec-exe">
-                <img src="./img/tecs/mysql4-33.png" alt="" class="tec-exe">
-            </div>
-
-            <!-- </div> -->
-
 
     </section>
 
+    <section class="tecnologias" id="tecnologias">
+        <div class="title-tecnologias">
+            <h2>Tecnologias com as quais já trabalhei</h2>
+        </div>
+        <div class="grid">
+            <img src="./img/tecs/html4-33.png" alt="" class="tec-exe">
+            <img src="./img/tecs/css4-33.png" alt="" class="tec-exe">
+            <img src="./img/tecs/javascript4-33.png" alt="" class="tec-exe">
+            <img src="./img/tecs/nodejs-logo4-33.png" alt="" class="tec-exe">
+            <img src="./img/tecs/mongodb4-33.png" alt="" class="tec-exe">
+            <img src="./img/tecs/php4-33.png" alt="" class="tec-exe">
+            <img src="./img/tecs/laravel4-33.png" alt="" class="tec-exe">
+            <img src="./img/tecs/mysql4-33.png" alt="" class="tec-exe">
+        </div>
+    </section>
 
-    <section class="projetos">
+
+    <section class="projetos" id="projetos">
         <div class="title-projetos">
             <h2>Conheça alguns dos meus projetos</h2>
         </div>
-        <figure class="img-projetos">
-            <img src="./img/tecs/mongodb4-33.png" alt="" class="img-projetos">
-            <figcaption>
-                Projeto 1
-            </figcaption>
-        </figure>
 
+        <container class="grid-projetos">
+            <figure class="card-projetos">
+                <img src="./img/projetos/gaia-sustentavel.jpg" alt="" class="img-projetos">
+                <figcaption>
+                    Projeto 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit illum quidem beatae cum id
+                    adipisci facilis omnis nobis? Error fugit doloribus excepturi rerum labore unde voluptates iusto
+                    autem omnis porro?
+                </figcaption>
+                <button class="btn-projeto">Confira aqui</button>
+            </figure>
+            <figure class="card-projetos">
+                <img src="./img/projetos/bethehero.jpg" alt="" class="img-projetos">
+                <figcaption>
+                    Projeto 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, cum. Modi nesciunt,
+                    molestias libero saepe officiis ducimus, unde molestiae sapiente dignissimos quas eum, assumenda et
+                    natus! Nam commodi voluptatum porro?
+                </figcaption>
+                <button class="btn-projeto">Confira aqui</button>
+            </figure>
+            <figure class="card-projetos">
+                <img src="./img/projetos/historiadetodos.jpg" alt="" class="img-projetos">
+                <figcaption>
+                    Projeto 3 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident suscipit accusantium
+                    esse exercitationem enim magni dolorum consequatur illum doloribus debitis, quo, quos pariatur
+                    possimus quam dignissimos cum, impedit consectetur aspernatur?
+                </figcaption>
+                <button class="btn-projeto">Confira aqui</button>
+            </figure>
+        </container>
     </section>
 
-    <!-- 
+    <section class="contato" id="contato">
+        <div class="title-contato">
+            <h2>Vamos marcar um café?</h2>
+        </div>
+        <div class="infos-contato">
+            <h4 class="infos-contato">olvr.mariana@gmail.com</h4>
+            <p class="infos-contato">+55 11 97981-7063</p>
+            <a class="infos-contato" href="https://www.linkedin.com/in/marianaolvr/" target="_blank"> <i
+                    class="fa fa-linkedin" aria-hidden="true"></i> </a>
+            <a href="https://github.com/marianaolvr" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        </div>
+    </section>
+
+</body>
+
+</html>
+
+
+
+
+<!-- 
             <div class="flip-card">
                 <div class="card">
                     <figure class="card-front">
@@ -130,45 +163,3 @@
                     </div>
                 </div>
             </div>
-
-
-            <figure>
-                <img class="img-portfolio" src="./img/fundo.jpg" alt="">
-                <figcaption>
-                    eCommerce
-                </figcaption>
-            </figure>
-            <figure>
-                <img class="img-portfolio" src="./img/fundo.jpg" alt="">
-                <figcaption>
-                    eCommerce
-                </figcaption>
-            </figure>
-        </div> -->
-
-
-    <section class="contato">
-        <div class="title-contato">
-            <h2>CONTATO</h2>
-        </div>
-
-        <div class="grid-icons">
-            <a href="https://github.com/marianaolvr" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-        </div>
-    </section>
-
-
-
-
-</body>
-
-<footer>
-
-    <h3>Teste</h3>
-
-</footer>
-
-
-</html>

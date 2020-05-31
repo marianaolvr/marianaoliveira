@@ -199,15 +199,19 @@ h1 {
 /*  INICIO DE TECNOLOGIAS */
 
 .tecnologias {
-    min-height: 100vh;
-padding-top: 80px;
+    height: 100vh;
 }
 
+.title-tecnologias {
+    border: 1px double rgb(0, 0, 0);
+    box-shadow: 8px 10px  rgb(0, 0, 0);
+    background-color: white;
+    width: fit-content;
 
-.content-tecnologias h3 {
-    text-align: center;
-    margin-top: 100px;
-    font-size: 3em;  
+}
+
+.title-tecnologias h2 {
+    font-size: 2.6em;
 }
 
 .grid {
@@ -287,29 +291,68 @@ padding-top: 80px;
 
 .projetos {
     height: 100vh;
-    display: grid;
-    grid-template-columns: 240px 240px;
-    align-content: center;
-    justify-content: center;
-    background-color: red;
 }
 
-
 .title-projetos h2 {
-    font-size: 4em;
+    font-size: 2.6em;
     border: 1px double rgb(0, 0, 0);
-    padding: 0.5em;
     box-shadow: 8px 10px  rgb(0, 0, 0);
     background-color: white;
+    margin-bottom: 80px;
     width: fit-content;
+    padding: 10px;
+
+}
+
+.grid-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(240px, 1fr));
+    justify-items: center;
+}
+
+.card-projetos {
+
+    border-radius: 5px;
+    border: 1px solid rgb(187, 187, 187);
+    width: min-content;
+    border: 20px double rgb(0, 0, 0);
+    padding: 0.5em;
+    box-shadow: 8px 10px rgb(204, 124, 48);
+
 }
 
 .img-projetos {
+    width: 300px;
+    border-bottom: black solid 2px;
+
+}
+
+figcaption {
+    text-size-adjust: initial;
+    padding: 10px;
+}
+
+
+/* INÍCIO DO CONTATO */
+.contato {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.title-contato {
+    margin-right: 50px;
+}
+
+.infos-contato {
     margin-left: 50px;
 }
 
-
-footer {
-    height: 5em;
-    background-color: darkcyan;
+.infos-contato{
+    font-size: 1.3em;
 }
+
+/* FIM DO CONTATO */
