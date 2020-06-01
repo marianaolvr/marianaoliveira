@@ -7,15 +7,11 @@
 
 body {
     font-family: 'Inconsolata', monospace;
-    min-width: 100vh;
+    /* min-width: 100vh; */
 }
 
-header {
-    
-    display: block;
-    justify-content: center;
-    align-items: flex-end;
-}
+
+
 
 /* COMEÇO DO MENU */
 .menu {
@@ -23,12 +19,12 @@ header {
     width: 100vw;
     top: 0;
     background-color: white;
-    padding-bottom: 20px;
-    box-shadow: rgb(238, 238, 238) 5px 5px ;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    box-shadow: rgb(238, 238, 238) 5px 5px;
 }
 
 .menu li {
-    /* tira as bolinhas da lista da nav */
     list-style: none;
     margin-right: 10px;
 }
@@ -37,15 +33,16 @@ header {
     display: flex;
     justify-content: flex-end;
     padding-right: 100px;
-    padding-top: 20px;
 }
 
 .menu a {
     display: block;
-    border: black;
     border-style: double;
     padding: 20px;
     box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
 }
 
 .menu a:hover {
@@ -53,36 +50,28 @@ header {
     background-color: rgb(74, 94, 100);
     border: white;  
 }
-
-a {
-    color: black;
-    text-decoration: none;
-    font-weight: 600;
-}
 /* FIM DO MENU */
 
 
-/* COMEÇO DO BANNER */
 
+
+
+/* COMEÇO DO BANNER */
 .open-banner {
     line-height: 2em;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.open-text {
-    color: black;
-}
 
-/* Começo da função tipywriter */
 h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid black; /* The typwriter cursor */
-    white-space: nowrap;
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    /* função tipywriter */
+    overflow: hidden; /* Esconde o conteúdo até a animação começar */
+    border-right: .15em solid black; /* cursor */
+    white-space: nowrap;  /* Deixa o texto na mesma linha */
+    margin: 0 auto; /* Movimento das letras que parece o de digitar */
+    letter-spacing: .15em; /* Espaçamento das letras */
     animation: 
       typing 1s steps(40, end),
       blink-caret .75s step-end infinite;
@@ -93,148 +82,98 @@ h1 {
     to { width: 100% }
 }
 
-/* O efeito typewriter no cursor */
 @keyframes blink-caret {
+    /* O efeito typewriter no cursor */
     from, to { border-color: transparent }
     50% { border-color: rgb(0, 0, 0); }
 }
-
 
 .img-banner {
     margin-top: 2em;
     height: 610px;
     width: 610px;
-    /* width: 100%; */
 }
 /* FIM DO BANNER */
 
 
-/* INICIO DO SOBRE MIM */
-.sobre {
+
+
+/* TITULOS E SECTIONS BASE */
+.sobre,
+.tecnologias,
+.projetos,
+.contato {
     height: 100vh;
-    /* display: flex;
-    /* grid-template-columns: repeat(3, 200px); */
-    /*align-items: center;
-    justify-content: center; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    padding-top: 125px;
 }
 
-/* @media (min-width: 1200px) {
-    .sobre,
-    .contato,
-    .tecnologias,
-    .portfolio {
-    max-width: 1200px;
-    }
-} */
 
 .sobre h2,
-/* .tecnologias h2, */
+.tecnologias h2,
+.projetos h2,
 .contato h2 {
     margin-bottom: 1.5em;
     font-size: 2em;
     border: 1px double rgb(0, 0, 0);
     padding: 0.5em;
     box-shadow: 8px 10px  rgb(0, 0, 0);
-    background-color: white;
     width: fit-content;
-    
 }
 
-.sobre p {
-    /* text-indent é identação - parágrafo no começo */
-    text-indent: 1em;
-    margin-bottom: 1em;
-    color: rgb(0, 0, 0);
+
+
+
+/* INICIO DO SOBRE MIM */
+.sobre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .sobre h2 {
     margin-right: 0.5em;
-}
-
-.title-sobre {
-    font-size: 2em;
-    margin-right: 10px;
-    line-break: strict;
-}
-
-.sobre-content {
-    display: flex;
-    justify-items: left;
-
+    font-size: 4em;
 }
 
 .text-sobre {
     display: grid;
     gap: 0.5em;
     grid-template-columns: 380px;
-    text-align: justify;
     margin-right: 5em;
-    
 }
 
-/* .content-sobre {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-} */
+.text-sobre p {
+    margin-bottom: 1em;
+}
 
 .foto-sobre {
-    border-width: 50px;
-    border-style: solid;
     height: 400px;
-    /* box-shadow: 10px 10px 10px cyan; */
     border: 20px double rgb(0, 0, 0);
-    padding: 0.5em;
     box-shadow: 8px 10px rgb(204, 124, 48);
-
-
-   
 }
 /* FIM DO SOBRE MIM */
 
+
+
+
 /*  INICIO DE TECNOLOGIAS */
 
-.tecnologias {
-    height: 100vh;
-}
 
-.title-tecnologias {
-    border: 1px double rgb(0, 0, 0);
-    box-shadow: 8px 10px  rgb(0, 0, 0);
-    background-color: white;
-    width: fit-content;
 
-}
-
-.title-tecnologias h2 {
-    font-size: 2.6em;
-}
-
-.grid {
+.grid-tecnologias {
     display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit , minmax(350px, 2fr));
     justify-items: center;
     align-items: center;
-    padding: 80px;
 }
-/* 
-.title-tecnologias {
-    font-size: 2em;
-    margin-right: 10px;
-    line-break: strict;
-    width: fit-content;
-} */
-
 
 .tec-exe {
-    width: 130px;
+    width: 200px;
     margin: 1em;
     box-shadow: 2px 2px 10px rgb(221, 220, 220);
     border-radius: 2px;
+    
 }
 
 .tec-exe:hover {
