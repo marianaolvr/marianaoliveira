@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <!-- tag de viewport já apresenta o site da forma correta do tamanho dos dispositivos -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,800;1,400&display=swap"
         rel="stylesheet">
@@ -12,6 +12,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7d03d38f52.js" crossorigin="anonymous"></script>
@@ -19,121 +21,156 @@
 </head>
 
 <body>
-    <header>
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="#sobre">SOBRE MIM</a>
-                </li>
-                <li>
-                    <a href="#tecnologias">TECNOLOGIAS</a>
-                </li>
-                <li>
-                    <a href="#projetos">PROJETOS</a>
-                </li>
-                <li>
-                    <a href="#contato">CONTATOS</i></a>
-                </li>
+
+    <header class="cabecalho">
+        <button class="btn-mobile" id="btn-mobile">
+            <i class="fa fa-bars fa-lg"></i>
+        </button>
+
+        <nav class="menu" id="menu">
+            <ul class="nav-ul" id="nav-ul">
+                <li><a href="#sobre">SOBRE MIM</a></li>
+                <li><a href="#tecnologias">TECNOLOGIAS</a></li>
+                <li><a href="#projetos">PROJETOS</a></li>
+                <li><a href="#contato">CONTATOS</i></a></li>
+                <a href="" class="btn-close">X</a>
             </ul>
         </nav>
     </header>
 
     <div class="open-banner">
-        <div class="text-banner">
-            <h1 class="open-text">OLÁ, EU SOU A MARIANA</h1>
-            <h2 class="open-text">DESENVOLVEDORA WEB E JORNALISTA</h2>
-        </div>
-        <div class="img-banner">
+        <!-- <div class="imgs-banner">
             <img class="img-banner" src="./img/3099610.jpg" alt="">
+        </div> -->
+        <div class="text-banner">
+            <h1>Olá, eu sou a Mariana! Sou <a href="#projetos">desenvolvedora web full stack</a>.</h1>
+            <h2>Também sou <a href="https://www.linkedin.com/in/marianaolvr/">content writer</a> e, de vez em quando, <a
+                    href="#sobre">continuo jornalista</a> (: </h2>
+            <button class="btn-banner"><a href="#projetos">Conheça os meus projetos</a></button>
+
         </div>
+
     </div>
 
-    <section class="sobre" id="sobre">
-            <div class="title-sobre">
-                <h2>O prazer <br> é todo meu</h2>
+
+
+    <section id="projetos">
+        <div class="title-projects">
+            <h2>Portfólio</h2>
+        </div>
+
+        <div class="projetos-grid">
+            <div class="card">
+                <img src="./img/projetos//bethehero.jpg" alt="">
+                <div class="card-text">
+                    <h1>Be the hero</h1>
+                    <p>A Be The Hero é uma plataforma (web e mobile) que conecta ONGs e voluntários. Foi
+                        desenvolvida
+                        durante a Semana OmniStack da Rocketseat, com ReactJS, NodeJS e ReactNative. </p>
+                </div>
             </div>
-            <div class="text-sobre">
-                <p>
-                    A informação e os dados me levaram à faculdade de Jornalismo em 2014. Ambos, cada vez mais valiosos,
-                    me trouxeram também até aqui: em busca de uma primeira posição na área de desenvolvimento web – onde
-                    os códigos são, hoje, uma camada ainda mais importante na disseminação de informações e no uso estratégico dos dados.
-                </p>
-                <p>Sou formada pelo projeto {Reprograma} em desenvolvimento back-end e pela Digital House em full stack. Busco
-                    trilhar uma trajetória com a construção de códigos dos quais eu me orgulhe, e de soluções
-                    tecnológicas que tenham impacto na vida das pessoas, seja ao resolver as dores de clientes
-                    ou em projetos pessoais. 
-                </p>
+
+            <div class="card">
+                <img src="./img/projetos/historiadetodos.jpg" alt="">
+
+                <div class="card-text">
+                    <h1>História de todos</h1>
+                    <p>Plataforma desenvolvida como projeto final da {Reprograma}, onde professores podem enviar uma
+                        reclamação direta
+                        ao MEC quando as escolas nas quais trabalham não crumpem a Lei 10.639/03.</p>
+                </div>
             </div>
-        <figure>
-            <img class="foto-sobre" src="./img/foto_pessoal_01.jpg" alt="">
-        </figure>
+
+            <div class="card">
+                <img src="./img/projetos/gaia-sustentavel3.jpg" alt="">
+
+                <div class="card-text">
+                    <h1>Gaia Sustentável</h1>
+                    <p>E-commerce de produtos naturais desenvolvido com PHP, Laravel e My SQL durante o projeto
+                        integrador do curso de
+                        Desenvolvimento Web Full Stack da Digital House.</p>
+                </div>
+            </div>
+            <button class="btn-banner btn-projetos"><a href="#tecnologias">Tecnologias que domino</a></button>
+        </div>
     </section>
+
 
     <section class="tecnologias" id="tecnologias">
         <div class="title-tecnologias">
-            <h2>Tecnologias com as quais já trabalhei</h2>
+            <h2>Minha stack atual</h2>
+            <p>Essas são algumas tecnologias com as quais já trabalhei, mas a stack de um dev curioso está sempre em
+                atualiazação!</p>
         </div>
         <div class="grid-tecnologias">
-            <img src="./img/tecs/html4-33.png" alt="" class="tec-exe">
-            <img src="./img/tecs/css4-33.png" alt="" class="tec-exe">
-            <img src="./img/tecs/javascript4-33.png" alt="" class="tec-exe">
-            <img src="./img/tecs/nodejs-logo4-33.png" alt="" class="tec-exe">
-            <img src="./img/tecs/mongodb4-33.png" alt="" class="tec-exe">
-            <img src="./img/tecs/php4-33.png" alt="" class="tec-exe">
-            <img src="./img/tecs/laravel4-33.png" alt="" class="tec-exe">
-            <img src="./img/tecs/mysql4-33.png" alt="" class="tec-exe">
+            <img src="./img/tecs/html4-33.png" alt="" class="img-tecnologias">
+            <img src="./img/tecs/css4-33.png" alt="" class="img-tecnologias">
+            <img src="./img/tecs/javascript4-33.png" alt="" class="img-tecnologias">
+            <img src="./img/tecs/nodejs-logo4-33.png" alt="" class="img-tecnologias">
+            <img src="./img/tecs/php4-33.png" alt="" class="img-tecnologias">
+            <img src="./img/tecs/laravel4-33.png" alt="" class="img-tecnologias">
+            <img src="./img/tecs/mysql4-33.png" alt="" class="img-tecnologias">
+            <img src="./img/tecs/mongodb4-33.png" alt="" class="img-tecnologias">
+
         </div>
+
+        <div class="btn-session">
+        <button class="btn-banner btn-projetos"><a href="#sobre">Saiba mais sobre a minha história (:</a></button>
+    </div>
     </section>
 
 
-    <section class="projetos" id="projetos">
-        <div class="title-projetos">
-            <h2>Conheça alguns dos meus projetos</h2>
+    <section class="sobre" id="sobre">
+        <div class="title-sobre">
+            <h2>De onde eu vim</h2>
         </div>
 
-        <container class="grid-projetos">
-            <figure class="card-projetos">
-                <img src="./img/projetos/gaia-sustentavel.jpg" alt="" class="img-projetos">
-                <figcaption>
-                    Projeto 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit illum quidem beatae cum id
-                    adipisci facilis omnis nobis? Error fugit doloribus excepturi rerum labore unde voluptates iusto
-                    autem omnis porro?
-                </figcaption>
-                <button class="btn-projeto">Confira aqui</button>
-            </figure>
-            <figure class="card-projetos">
-                <img src="./img/projetos/bethehero.jpg" alt="" class="img-projetos">
-                <figcaption>
-                    Projeto 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, cum. Modi nesciunt,
-                    molestias libero saepe officiis ducimus, unde molestiae sapiente dignissimos quas eum, assumenda et
-                    natus! Nam commodi voluptatum porro?
-                </figcaption>
-                <button class="btn-projeto">Confira aqui</button>
-            </figure>
-            <figure class="card-projetos">
-                <img src="./img/projetos/historiadetodos.jpg" alt="" class="img-projetos">
-                <figcaption>
-                    Projeto 3 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident suscipit accusantium
-                    esse exercitationem enim magni dolorum consequatur illum doloribus debitis, quo, quos pariatur
-                    possimus quam dignissimos cum, impedit consectetur aspernatur?
-                </figcaption>
-                <button class="btn-projeto">Confira aqui</button>
-            </figure>
-        </container>
+        <div class="text-sobre">
+            <p>
+                A informação e os dados me levaram à faculdade de Jornalismo em 2014. Ambos, cada vez mais valiosos,
+                me trouxeram também até aqui: em busca de uma primeira posição na área de desenvolvimento web – onde
+                os códigos são, hoje, uma camada ainda mais importante na disseminação de informações e no uso
+                estratégico dos dados.
+            </p>
+            <br>
+            <p>Sou formada pelo projeto {Reprograma} em desenvolvimento back-end e pela Digital House em full stack.
+                Busco
+                trilhar uma trajetória com a construção de códigos dos quais eu me orgulhe, e de soluções
+                tecnológicas que tenham impacto na vida das pessoas, seja ao resolver as dores de clientes
+                ou em projetos pessoais.
+            </p>
+
+
+        </div>
+        <figure class="container-img">
+            <img class="img-sobre" src="./img/foto_pessoal_01.jpg" alt="">
+
+        </figure>
     </section>
+
+    <div class="btn-session">
+        <button class="btn-banner btn-projetos"><a href="#contato">Obrigada pela visita!</a></button>
+    </div>
+
 
     <section class="contato" id="contato">
+        <i class="fas fa-coffee"></i>
         <div class="title-contato">
-            <h2>Vamos marcar um café?</h2>
+            <h2>Que tal um café?</h2>
+            <p>Para entrar em contato comigo pode ser por e-mail, WhatsApp ou telefone (:</p>
         </div>
         <div class="infos-contato">
-            <h4 class="infos-contato">olvr.mariana@gmail.com</h4>
-            <p class="infos-contato">+55 11 97981-7063</p>
-            <a class="infos-contato" href="https://www.linkedin.com/in/marianaolvr/" target="_blank"> <i
+            <h4>olvr.mariana@gmail.com</h4>
+            <p>+55 11 97981-7063</p>
+            <a  href="https://www.linkedin.com/in/marianaolvr/" target="_blank"> <i
                     class="fa fa-linkedin" aria-hidden="true"></i> </a>
             <a href="https://github.com/marianaolvr" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+          
         </div>
     </section>
+
+    <script src="script.js"></script>
+
 
 </body>
 
@@ -156,3 +193,19 @@
                     </div>
                 </div>
             </div>
+
+
+
+
+                <section class="projetos" id="projetos">
+        <container class="grid-projetos">
+            <figure class="card-projetos">
+                <img src="./img/projetos/gaia-sustentavel.jpg" alt="" class="img-projetos">
+                <figcaption>
+                    Projeto 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit illum quidem beatae cum id
+                    adipisci facilis omnis nobis? Error fugit doloribus excepturi rerum labore unde voluptates iusto
+                    autem omnis porro?
+                </figcaption>
+                <button class="btn-projeto">Confira aqui</button>
+            </figure>
+    </section>
