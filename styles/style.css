@@ -351,15 +351,34 @@ padding: 5%;
 
 /* MEDIA QUERY */
 
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 768px) {
   
 
-  
-
-  
-    
-    
-
+    .projetos-grid 
+    {
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 1fr 1fr ;
+        column-gap: 16px;
+        justify-content: center;
+    }
 
 
 } 
+
+
+
+
+@media only screen and (min-width: 1240px) {
+  
+
+    .projetos-grid 
+    {
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 1fr;
+        column-gap: 30px;
+        justify-content: center;
+    }
+
+
+} 
+
