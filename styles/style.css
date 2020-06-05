@@ -11,9 +11,9 @@ ul {list-style: none;}
 .cabecalho {
     width: 100%;
     padding: 3% 4%;
-    background-color: rgb(252, 252, 252);
+    background-color: rgb(255, 255, 255);
     position: fixed;
-
+    box-shadow: rgb(238, 238, 238) 2px 2px 3px;
 }
 
 .btn-mobile {
@@ -23,40 +23,45 @@ ul {list-style: none;}
     text-align: center;
     cursor: pointer;
     background-color: rgb(255, 255, 255);
-    border: 3px double rgb(0, 0, 0);
-    border-radius: 5px;
-    
+    border-style: none;
+    border-radius: 5px;  
 }
 
-.btn-mobile a {
-    text-decoration: none;
+.fa-bars{
+    color: rgb(0, 0, 0);
+   
 }
+
 
 .menu {
-    width: fit-content;
-    height: fit-content;
+    /* width: fit-content;
+    height: fit-content; */
     padding: 5%;
     position: fixed;
-    background-color: white;
-    top: 0;
-    left: 0;
-    border: 5px double rgb(165, 16, 16);
+    color: white;
+    /* top: 0;
+    left: 0; */
+
+    background-color: rgb(0, 0, 0);
     display: none;
+    text-align: left;
+    
 }
 
 .menu.show {
     display: flex;
 }
-
+/* 
 .btn-close {
-    font-size: 3em;
-    color: rgb(161, 16, 16);
-    cursor: pointer;    
-}
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    cursor: pointer;  
+    font-weight: 700;  
+} */
 
 .menu ul {
     width: 100%;
-    text-align: center;
+    text-align: left;
 }
 
 .menu li {
@@ -64,12 +69,13 @@ ul {list-style: none;}
 }
 
 .menu li a {
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 1.5% 3%;
+    color: rgb(253, 253, 253);
 }
 
 .menu li a:hover {
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid rgb(248, 248, 248);
 }
 
 
@@ -86,33 +92,65 @@ ul {list-style: none;}
 }
 
 .open-banner h1 {
-    font-size: 2em;
+    font-size: 1.8em;
     font-weight: 700;
+    min-width: 100%;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 8px;  
+}
+
+.open-banner h2 {
+    font-size: 1.2em;
     min-width: 100%;
     font-family: 'Raleway', sans-serif;
     margin-bottom: 20px;  
 }
 
-.open-banner h2 {
-    font-size: 1.3em;
-    min-width: 100%;
-    font-family: 'Raleway', sans-serif;
-    margin-bottom: 20px;  
+
+.desenvolvedora {
+    color: #DE1A1A  ;
+}
+
+.desenvolvedora:hover {
+    background-color: rgba(0,0,0,5);
+}
+
+.writer {
+    color: #E0A890;
+}
+
+.writer:hover {
+    background-color: rgba(0,0,0,5);
+}
+
+.jornalismo {
+    color: #129490;
+}
+
+.jornalismo:hover {
+    background-color: rgba(0,0,0,5);
 }
 
 .btn-banner {
     border-radius: 2px;
+    margin-top: 5%;
     padding: 3%;
     font-size: 1em;
-    background-color: white;
-    border: 1px solid rgb(0, 0, 0);
-    box-shadow: 4px 4px 0  rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    border:none;
+  
+    
 }
 
 .btn-banner:active {
     border: 5px double rgb(0, 0, 0);
     box-shadow: none;
     cursor: pointer;
+}
+
+.btn-banner a {
+    color: rgb(245, 245, 245);
+    font-weight: 700;
 }
 
   
@@ -304,27 +342,24 @@ padding: 5%;
     height: 50px;
 }
 
+
+
+
+
+
+
+
 /* MEDIA QUERY */
 
 @media only screen and (min-width: 425px) {
-    .open-banner h1 {
-        font-size: 3em;
-    }
+  
 
-    .open-banner h2 {
-        font-size: 2em;
-    }
+  
 
-    .btn-banner {
-        font-size: 1.2em;
-    }
+  
     
     
-    .btn-banner:active {
-        border: 5px double rgb(0, 0, 0);
-        box-shadow: none;
-        cursor: pointer;
-    }
+
 
 
 } 
